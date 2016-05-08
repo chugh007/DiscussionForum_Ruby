@@ -13,15 +13,64 @@
  *= require_tree .
  *= require_self
  */
-
+body{
+    font-family: 'Oxygen', sans-serif;
+    background:#EDEFF0;
+}
 
 .wrapper {
     margin:20px auto;
     width: 60%;
-    max-width:1140px;
 }
 .main_header{
     margin:0 auto;
-    width: 80%;
-    max-width:1140px;
+    width: 100%;
+    background:white;
+}
+
+#logo:first-child{
+    text-transform : uppercase;
+    font-weight : 700;
+    letter-spacing: -1px;
+    font-size:1.2rem;
+}
+.main_header:first-child{
+    float:left;
+}
+.main_header #buttons{
+    float:right;
+}
+#buttons > a{
+    line-height:60px;
+    background:#397CAC;
+    padding: .5em 1em;
+    border-radius:0.2em;
+    color:white;
+    text-decoration:none;
+    font-weight:100;
+}
+.clearfix.before,.clearfix.after{
+    content : " ";
+    display:table;
+}
+.clearfix.after{
+    clear:both;
+}
+#post_div{
+    background:white;
+}
+h2.title > a{
+    color:#397CAC;
+    text-decoration:none;
+    font-weight:100;
+    font-size:1.25rem;
+}
+p.date{
+    font-size:0.9rem;
+    color:#B2BAC2;
+}
+.each_post{
+    margin-left:20%;
+    width:60%;
+    border-bottom:1px solid #D1d1d1;
 }
