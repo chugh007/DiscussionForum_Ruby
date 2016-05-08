@@ -1,14 +1,19 @@
 #post_content
   %h1=@post.title
   %p=@post.content
-
+  %hr
   #comments
-    %h2=@post.comments.count
+    %h2
+      Comments Till Now =>
+      =@post.comments.count
     = render @post.comments
 
     %h3 Reply to Thread
     =render 'comments/form'
 
-  =link_to "Edit" , edit_post_path(@post)
-  =link_to "Delete",post_path(@post),method: :delete,data: {confirm: "Are u sure u want to do this??"}
-  =link_to "Home" ,root_path
+  .button
+    =link_to "Edit" , edit_post_path(@post)
+  .button
+    =link_to "Delete",post_path(@post),method: :delete,data: {confirm: "Are u sure u want to do this??"}
+  .button
+    =link_to "Home" ,root_path
