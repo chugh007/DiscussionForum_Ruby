@@ -25,14 +25,16 @@ body{
 .main_header{
     margin:0 auto;
     width: 100%;
-    background:white;
+
 }
 
-#logo:first-child{
+#logo > p >a{
     text-transform : uppercase;
     font-weight : 700;
     letter-spacing: -1px;
     font-size:1.2rem;
+    text-decoration:none;
+    color: #397CAC;
 }
 .main_header:first-child{
     float:left;
@@ -73,4 +75,20 @@ p.date{
     margin-left:20%;
     width:60%;
     border-bottom:1px solid #D1d1d1;
+}
+#post_content{
+    background:white;
+    padding: 2em 5%;
+    border-radius: .5em;
+}
+#post_content > h1{
+    font-weight:100;
+    font-size:2em;
+    color:#397CAC;
+}
+#post_content > p{
+    color:#B2BAC2;
+    font-size: 0.9rem;
+    font-weight:100;
+    line-height:1.5;
 }
